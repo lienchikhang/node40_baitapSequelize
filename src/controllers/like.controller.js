@@ -5,7 +5,7 @@ import { Op } from 'sequelize';
 
 const model = initModel(sequelize);
 
-const getLike = async (req, res) => {
+const getLikes = async (req, res) => {
     const { resId, userId } = req.query;
 
     console.log({ resId, userId })
@@ -86,7 +86,7 @@ const removeLike = async (req, res) => {
 }
 
 export {
-    getLike,
+    getLikes,
     addLike,
     removeLike
 }

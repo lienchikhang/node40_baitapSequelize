@@ -1,10 +1,10 @@
 import express from 'express';
-import { addLike, getLike, removeLike } from '../controllers/like.controller.js';
+import { addLike, getLikes, removeLike } from '../controllers/like.controller.js';
 
 const likeRoute = express.Router();
 
 //http://localhost:8080/like/get?resId=<value>&userId=<value>
-likeRoute.get('/get', getLike);
+likeRoute.get('/get', getLikes);
 
 //http://localhost:8080/like/add
 likeRoute.post('/add', addLike);
